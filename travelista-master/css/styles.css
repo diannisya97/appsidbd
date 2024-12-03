@@ -1,0 +1,151 @@
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999; /* Pastikan modal berada di atas konten lainnya */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6); /* Latarnya sedikit lebih gelap */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* Sedikit ruang dari atas dan di tengah */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px; /* Lebar modal */
+    max-width: 90%;
+    position: relative;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    width: 40%;
+    font-weight: bold;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+    #map {
+        width: 90%;
+        height: 555px;
+        margin: 0 auto; /* Menengahkan elemen di tengah */
+        text-align: center; /* Untuk menengahkan teks di dalam elemen */
+    }
+
+    h1.mb-10 {
+        margin-bottom: 10px;
+    }
+
+
+    .popup-content {
+            max-width: 200px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .popup-content h4 {
+            margin: 0;
+            font-size: 14px;
+            color: #333;
+            font-weight: bold;
+        }
+        .popup-content p {
+            margin: 5px 0;
+            font-size: 12px;
+            color: #555;
+        }
+        .popup-content a {
+            display: block;
+            margin-top: 10px;
+            padding: 3px 8px;
+            font-size: 12px;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 3px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .popup-content a:hover {
+            background-color: #0056b3;
+        }
+    .info-card {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            padding: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .info-card {
+            background-color: #f4f4f9; /* Warna latar belakang yang sedikit lebih gelap */
+            border-radius: 8px; /* Sudut yang lebih kecil */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Bayangan lebih jelas */
+            padding: 15px; /* Padding lebih kecil */
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            max-width: 300px; /* Lebar maksimum yang lebih kecil */
+            border: 1px solid #ddd; /* Garis border untuk menambahkan kedalaman */
+        }
+
+        .info-card:hover {
+            transform: translateY(-3px); /* Efek hover lebih halus */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Bayangan lebih gelap saat hover */
+        }
+
+        .info-card .icon {
+            font-size: 24px; /* Ukuran ikon lebih besar */
+            color: #0056b3; /* Warna ikon lebih gelap */
+            margin-right: 15px; /* Jarak antara ikon dan teks lebih besar */
+            transition: color 0.3s ease;
+        }
+
+        .info-card .icon:hover {
+            color: #003d7a; /* Warna ikon lebih gelap saat hover */
+        }
+
+        .info-card .text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .info-card .text .number {
+            font-size: 24px; /* Ukuran font nomor sedikit lebih besar */
+            font-weight: bold;
+            color: #222; /* Warna teks nomor yang lebih gelap */
+        }
+
+        .info-card .text .label {
+            font-size: 14px; /* Ukuran font label lebih besar */
+            color: #666; /* Warna label sedikit lebih gelap */
+            margin-top: 5px; /* Jarak antara nomor dan label sedikit lebih besar */
+        }

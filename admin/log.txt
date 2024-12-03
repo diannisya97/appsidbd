@@ -1,0 +1,8 @@
+Array
+(
+    [nama] => aa
+    [username] => admin
+    [contact] => -
+    [email] => cmyf18@gmail.com
+    [password] => 
+)

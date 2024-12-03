@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form dengan Modal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .description {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2; /* Jumlah baris yang ingin ditampilkan */
+            -webkit-box-orient: vertical;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="card">
+        <img src="your-image-url.jpg" class="card-img-top" alt="Gambar">
+        <div class="card-body">
+            <h5 class="card-title">Judul</h5>
+            <p class="card-text description">
+                Ini adalah deskripsi yang mungkin terlalu panjang untuk ditampilkan sepenuhnya. Klik tombol "Selengkapnya" untuk melihat deskripsi lengkapnya.
+            </p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#descriptionModal">
+                Selengkapnya
+            </button>
+        </div><!DOCTYPE html>
+        <html lang="id">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Form dengan Slider</title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+            <style>
+                .form-container {
+                    display: flex;
+                    overflow-x: auto;
+                    padding: 20px;
+                    gap: 20px;
+                }
+        
+                .form-card {
+                    flex: 0 0 300px; /* Atur lebar form */
+                    height: 400px; /* Atur tinggi form */
+                    border: 1px solid #ddd;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                }
+        
+                .form-card img {
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    max-height: 150px;
+                    object-fit: cover;
+                    width: 100%;
+                }
+        
+                .description {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                }
+            </style>
+        </head>
+        <body>
+        
+        <div class="container-fluid mt-5">
+            <div class="form-container">
+                <!-- Form Card 1 -->
+                <div class="form-card">
+                    <img src="your-image-url-1.jpg" alt="Gambar 1">
+                    <div class="p-3">
+                        <h5 class="card-title">Judul 1</h5>
+                        <p class="card-text description">Deskripsi 1 yang panjang. Klik selengkapnya untuk melihat lebih lanjut.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Selengkapnya</button>
+                    </div>
+                </div>
+        
+                <!-- Form Card 2 -->
+                <div class="form-card">
+                    <img src="your-image-url-2.jpg" alt="Gambar 2">
+                    <div class="p-3">
+                        <h5 class="card-title">Judul 2</h5>
+                        <p class="card-text description">Deskripsi 2 yang panjang. Klik selengkapnya untuk melihat lebih lanjut.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">Selengkapnya</button>
+                    </div>
+                </div>
+        
+                <!-- Tambahkan Form Card lainnya sesuai kebutuhan -->
+        
+            </div>
+        </div>
+        
+        <!-- Modal 1 -->
+        <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel1">Deskripsi Lengkap 1</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Deskripsi lengkap 1.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal 2 -->
+        <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modalLabel2" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel2">Deskripsi Lengkap 2</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Deskripsi lengkap 2.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        </body>
+        </html>
+        
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="descriptionModal" tabindex="-1" aria-labelledby="descriptionModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="descriptionModalLabel">Deskripsi Lengkap</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Ini adalah deskripsi yang mungkin terlalu panjang untuk ditampilkan sepenuhnya. Klik tombol "Selengkapnya" untuk melihat deskripsi lengkapnya.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
