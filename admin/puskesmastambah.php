@@ -1,6 +1,6 @@
 <?php
 // Koneksi ke dalam database
-$conn = mysqli_connect("localhost", "root", "", "app-sidbd");
+$conn = mysqli_connect("localhost", "data", "kaskus27", "appsidbd");
 
 // Cek koneksi
 if (!$conn) {
