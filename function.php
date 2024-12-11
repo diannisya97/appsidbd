@@ -2,7 +2,7 @@
 
 
 // Koneksi ke dalam database
-$conn = mysqli_connect("localhost", "root", "", "app-sidbd");
+$conn = mysqli_connect("localhost", "data", "kaskus2727", "appsidbd");
 
 // Cek koneksi
 if (!$conn) {
